@@ -1,0 +1,45 @@
+name: evofit
+description: "Projeto Flutter integrado ao backend Spring Boot + MySQL"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Ícones padrão iOS
+  cupertino_icons: ^1.0.8
+
+  # Fonts personalizadas
+  google_fonts: ^6.2.1
+
+  # Requisições HTTP (integração com API Spring Boot)
+  http: ^1.2.2
+
+  # Armazenamento local (guardar token, email do usuário, etc.)
+  shared_preferences: ^2.3.2
+
+  # Google Maps Flutter
+  google_maps_flutter: ^2.3.0
+
+  # Location (obter GPS do usuário) - versão compatível
+  location: ^8.0.1
+
+  # Animações e microinterações
+  flutter_animate: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+
+dependency_overrides:
+  location: ^8.0.1
