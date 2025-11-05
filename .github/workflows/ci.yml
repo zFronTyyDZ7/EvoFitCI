@@ -1,0 +1,27 @@
+name: SmartHAS-CICD
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Build
+      run: echo "Build executado com sucesso!"
+
+    - name: Testes Automatizados
+      run: echo "Testes unitários simulados executados!"
+
+    - name: Deploy Automatizado
+      run: echo "Deploy simulado integrado ao Oracle realizado!"
+
+    - name: Logs Finalizados
+      run: echo "Pipeline finalizado e log registrado!"
