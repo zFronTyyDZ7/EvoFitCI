@@ -65,6 +65,12 @@ class _HomeScreenState extends State<HomeScreen>
         "rota": "/config",
         "cor": Colors.orange,
       },
+      {
+        "titulo": "EvoFit IA",
+        "icone": Icons.smart_toy_rounded,
+        "rota": "/chat_ai",
+        "cor": Colors.blue, // azul como você pediu
+      },
     ];
 
     return Scaffold(
@@ -116,11 +122,8 @@ class _HomeScreenState extends State<HomeScreen>
                       ),
                     ),
                     const SizedBox(height: 8),
-                    // Placeholder para progresso ou notificações
                     LinearProgressIndicator(
-                      value: index == 1
-                          ? 0.4
-                          : null, // exemplo: 40% para Objetivos
+                      value: index == 1 ? 0.4 : null,
                       backgroundColor: Colors.grey[200],
                       color: item['cor'],
                     ),

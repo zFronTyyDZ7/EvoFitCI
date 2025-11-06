@@ -7,6 +7,7 @@ import 'screens/cadastro_screen.dart';
 import 'screens/home_screen.dart';
 import 'screens/mapa_screen.dart';
 import 'screens/objetivo_screen.dart';
+import 'screens/chat_ai_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -72,6 +73,7 @@ class EvotifApp extends StatelessWidget {
         '/home': (_) => const HomeScreen(),
         '/mapa': (_) => const MapaScreen(),
         '/objetivo': (_) => const ObjetivoScreen(),
+        '/chat_ai': (_) => const ChatAiScreen(), // << ROTA DA IA AQUI
       },
     );
   }
